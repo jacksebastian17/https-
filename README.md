@@ -1,5 +1,1 @@
 # jacksebastian
-
-````
-$ python website.py
-````
