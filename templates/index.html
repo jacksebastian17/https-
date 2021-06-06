@@ -5,99 +5,140 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- STYLESHEETS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/styles.css">
-  <link rel="icon" href="static/images/logo.png">
-
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" media="all">
 
+  <!-- SCRIPTS -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="/static/js/jquery-1.12.3.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/plugin.js"></script>
 </head>
-<body>
+
+<body="loaded">
+<div id="loader-wrapper">
+		<div class="loader-img"><img src="/static/images/logo.png" alt="preloader"></div>
+		<div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+	</div>
+
+<!-- Header -->
+<section class="top-header style-one pad-125 bg-pattern-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-5 col-md-6 offset-xl-1 text-left has-animation animate-in" data-delay="0">
+					<img src="static/images/main.jpg" alt="avatar" class="avatar-img">
+				</div>
+				<div class="col-xl-5 col-md-6 text-left">
+					<h1 class="has-animation animate-in" data-delay="10"> Hi. i am Jack Sebastian</h1>
+					<p class="has-animation animate-in" data-delay="20"> Welcome to my website. Oh, and I really love  <span class="txt-rotate" data-period="2000" data-rotate="[ &quot;coding.&quot;, &quot;working out.&quot;, &quot;sleeping.&quot;, &quot;video games.&quot; ]"></span></span> </p>
+					<ul class="social-icons light list-inline has-animation animate-in" data-delay="30">
+						<li class="list-inline-item"><a href="https://www.facebook.com/jack.sebastian.526"><i class="icon-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/jacksebastian17/"><i class="icon-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/jacksebastian/"><i class="icon-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/jacksebastian17"><i class="icon-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Jack Sebastian</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">HOME</a></li>
-        <li><a href="static/resume.pdf" download="Jack Sebastian Resume">RESUME</a></li>
-        <li><a href="mailto:jacksebastian1@gmail.com">CONTACT ME</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <img src="static/images/main.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Jack" width="350" height="350">
-  <h1>Howdy! My name is Jack Sebastian and welcome to my website!</h1>
+<section class="header-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-12 text-left">
+        <img src="static/images/logo.png" class="logo" alt="logo">
+				</div>
+				<div class="col-lg-8 col-md-12">
+					<nav id="main-menu" class="text-center">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="https://github.com/jacksebastian17">Github</a></li>
+							<li><a href="static/resume.pdf" download="Jack Sebastian Resume">Resume</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="mailto:jacksebastian1@gmail.com">Contact</a></li>
+						</ul>
+					</nav>
+				</div>	
+			</div>
+		</div>
+	</section>
 </div>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h1 class="margin">Who Am I?</h1>
-  <p style="padding-left: 100px; padding-right: 100px">I am currently a sophomore at Texas A&M University double majoring in Computer Science and Applied Mathematics. I am very focused when it comes to my work and studies, however I do enjoy 
-    going out and spending time with friends. When I have free time, you can find me either coding, lifting weights, or playing video games. During my first year at Texas A&M, I competed in the Fall ICPC (International Competitive Programming 
-    Competition) and A&M's annual hackathon, TAMUhack, where my team placed 7th overall at the event! It was an exciting yet insightful experience that not only taught me a lot about how much I know about software development, but also about 
-    how much I don't know. During my second year, I continued to focus on my studies and involve myself in a ton of Hackathons. During the Spring semester, I was invited to join TAMU Datathon as their Tech Director. I hope to learn a lot during 
-    my time at Texas A&M University and become more knowledgeable about the world of software!</p>
-</div>
 
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h1 class="margin">Projects</h1><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>Walmart Search Engine</h2>
-      <a href="https://devpost.com/software/walmart-search-engine-iun7zl" style="font-size: 50;">View Devpost</a>
-      <img src="static/images/walmart.jpg" class="img-responsive margin" style="display:inline" width="500" height="500" alt="Walmart Search Engine">
-      <p>Walmart Search Engine web scrapes thousands of products off of Walmart.com and store information on the product name as well as its description. We then use this information to help generate similar products on the website based off of what 
-          a user types in as a query for the search engine.</p>
-    </div>
-    <div class="col-sm-4"> 
-      <h2>Passwordifier</h2>
-      <a href="https://devpost.com/software/walmart-search-engine-iun7zl" style="font-size: 50;">View Devpost</a>
-      <img src="static/images/passwordifier.jpg" class="img-responsive margin" style="display:inline" width="525" height="525" alt="Passwordifier">
-      <p>Passwordifier is a tool through which you can view all your passwords in one place, and see the report of different analysis that we run on them. You can see which websites you have an account with, which passwords are being used more often than 
-          others, and how strong your passwords relatively are. It also helps you create strong custom passwords. How this works is that you essentially fill out a small questionnaire, and then the tool generates a bunch of password suggestions for you.</p>
-    </div>
-    <div class="col-sm-4"> 
-      <h2>Driversity</h2>
-      <a href="https://devpost.com/software/driversity-8wmsd6" style="font-size: 50;">View Devpost</a>
-      <img src="static/images/driversity.PNG" class="img-responsive margin" style="display:inline" width="470" height="470" alt="Driversity">
-      <p>Driversity is a mobile ridesharing application that allows the user to choose their driver based off certain preferences. For example, if a teenage girl needed to get a ride late a night, but was only comfortable with another girl bring her driver,
-        then she can specify that in the settings! The user can also diversely filter what ethnicity or age they would prefer.
-      </p>
-    </div>
-  </div>
-</div>
+<!-- Main Container -->
+<section class="blog-post style-one pad-75">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+
+          <!-- Project 1 -->
+					<article class="has-animation animate-in" data-delay="0">
+						<div class="entry-meta-content">
+							<div class="entry-date">1</div>
+							<h2 class="entry-title">Driversity</h2>
+							<span class="entry-meta">By Jack Sebastian at <a href="https://tamuhack.com/">TAMUhack 2020</a></span>
+						</div>
+						<div class="entry-media">
+							<img src="static/images/new_driversity.jpg" alt="post-image">
+						</div>
+						<div class="entry-content-bottom">
+							<p class="entry-content">Our application allows the user to create an account, providing basic information such as their name, email, phone number, etc. (this 
+              information is stored for future references). After the user allows the application to access their location, Driversity can then enter Pickup and drop location from 
+              the Google Search API.</p>
+							<a href="https://devpost.com/software/driversity-8wmsd6" class="entry-read-more"><span></span>View Devpost</a>
+              <a href="https://github.com/SolaJr/Driversity-" class="entry-meta bold float-right">Go to Github Repository</a>
+						</div>
+					</article>
+
+          <!-- Project 2 -->
+					<article class="has-animation animate-in" data-delay="0">
+						<div class="entry-meta-content">
+							<div class="entry-date">2</div>
+							<h2 class="entry-title">Passwordifier</h2>
+							<span class="entry-meta">By Jack Sebastian at <a href="https://tamuhack.com/hh/2020">HowdyHack 2020</a></span>
+						</div>
+						<div class="entry-media">
+							<img src="static/images/lock.jpg" alt="post-image">
+						</div>
+						<div class="entry-content-bottom">
+							<p class="entry-content">Passwordifier is a tool through which you can view all your passwords in one place, and see the report of different analysis that we run on 
+              them. You can see which websites you have an account with, which passwords are being used more often than others, and how strong your passwords relatively are. It also 
+              helps you create strong custom passwords. How this works is that you essentially fill out a small questionnaire, and then the tool generates a bunch of password 
+              suggestions for you.</p>
+							<a href="https://devpost.com/software/walmart-search-engine-iun7zl" class="entry-read-more"><span></span>View Devpost</a>
+              <a href="https://github.com/daks001/passwordifier" class="entry-meta bold float-right">Go to Github Repository</a>
+						</div>
+					</article>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="d-flex justify-content-center col-sm-12">
+					<div class="button-4">
+					    <div class="eff-4"></div>
+					    <a href="#"> Load More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- Footer -->
-<div class="footer-dark">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col item social">
-                    <a href="https://www.facebook.com/jack.sebastian.526"><i class="iconify" data-icon="ion-social-facebook" data-inline="true"></i></i></a>
-                    <a href="https://twitter.com/jacksebastian17"><i class="iconify" data-icon="ion-social-twitter-outline" data-inline="true"></i></a>
-                    <a href="https://www.linkedin.com/in/jacksebastian/"><i class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="true"></i></a>
-                    <a href="https://www.instagram.com/jacksebastian17/"><i class="iconify" data-icon="ion-social-instagram" data-inline="true"></i></a>
-                    <a href="https://github.com/jacksebastian17"><i class="iconify" data-icon="akar-icons:github-fill" data-inline="true"></i></a>
-                </div>
-            </div>
-            <p style="text-align: center; padding-top: 25px;">Made with Bootstrap <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></p>
-        </div>
-    </footer>
-</div>
+<section class="footer-wrapper pad-75 bg-lightblue">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p class="copyright-text">Jack Sebastian | <b>jacksebastian1@gmail.com</b></p>
+					<a href="#" class="back-top">BACK TO TOP</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 </body>
 </html>
