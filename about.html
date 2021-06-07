@@ -8,21 +8,24 @@
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="all">
   <link rel="icon" href="static/images/logo.png"> <!-- logo for chrome header -->
+
+  <link rel="stylesheet" href="static/css/carousel.min.css">
+  <link rel="stylesheet" href="static/css/theme.default.min.css">
 
   <!-- SCRIPTS -->
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="/static/js/jquery-1.12.3.min.js"></script>
-  <script src="/static/js/main.js"></script>
-  <script src="/static/js/plugin.js"></script>
+  <script src="static/js/jquery-1.12.3.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/plugin.js"></script>
 </head>
 
 <body="loaded">
 	<div id="loader-wrapper">
-		<div class="loader-img"><img src="/static/images/logo.png" alt="preloader"></div>
+		<div class="loader-img"><img src="static/images/logo.png" alt="preloader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
 	</div>
@@ -51,18 +54,70 @@
 	</section>
 	</div>
 
-    <!-- About Section -->
     <section class="about-wrapper pad-top-50">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<div class="page-title pad-bottom-50">
-						<h1><b>About Me</b></h1>
+						<h1 style="font-weight: 700 !important; font-size: 40px;"><b>About Me</b></h1>
 					</div>
 				</div>
-				<div class="col-sm-12 mb50">
-					<img src="static/images/about-header.JPG" alt="image">
-				</div>
+				<section class="top-header style-six">
+					<div class="container">
+						<div class="row">
+							<div class="owl-carousel owl-theme slider-2 owl-loaded owl-drag">																				
+								<div class="owl-stage-outer">
+									<div class="owl-stage" style="transform: translate3d(-2880px, 0px, 0px); transition: all 0s ease 0s; width: 5760px;">
+
+										<div class="owl-item active" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/jeleanor.JPG" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+										<div class="owl-item" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/soccer.jpg" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+										<div class="owl-item" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/christmas.jpg" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+										<div class="owl-item" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/goofy.jpg" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="owl-nav">
+									<button type="button" role="presentation" class="owl-prev">
+										<img src="static/images/arrow-white-2.png" alt="left-arrow">
+									</button>
+									<button type="button" role="presentation" class="owl-next">
+										<img src="static/images/arrow-white.png" alt="right=arrow">
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<div class="col-lg-6">
 					<p>I'm currently a junior at Texas A&#38;M University at College Station double majoring in Computer Science and Applied Mathematics and graduating in triple 
                     honors: University Honors, Engineering Honors, and Mathematics Honors. I have a twin sister that also goes to Texas A&#38;M with me, an older sister who
