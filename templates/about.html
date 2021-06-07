@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="all">
   <link rel="icon" href="static/images/logo.png"> <!-- logo for chrome header -->
+
+  <link rel="stylesheet" href="static/css/carousel.min.css">
+  <link rel="stylesheet" href="static/css/theme.default.min.css">
 
   <!-- SCRIPTS -->
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="/static/js/jquery-1.12.3.min.js"></script>
-  <script src="/static/js/main.js"></script>
-  <script src="/static/js/plugin.js"></script>
+  <script src="static/js/jquery-1.12.3.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/plugin.js"></script>
 </head>
 
 <body="loaded">
 	<div id="loader-wrapper">
-		<div class="loader-img"><img src="/static/images/logo.png" alt="preloader"></div>
+		<div class="loader-img"><img src="static/images/logo.png" alt="preloader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
 	</div>
@@ -50,18 +54,70 @@
 	</section>
 	</div>
 
-    <!-- About Section -->
     <section class="about-wrapper pad-top-50">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<div class="page-title pad-bottom-50">
-						<h1><b>About Me</b></h1>
+						<h1 style="font-weight: 700 !important; font-size: 40px;"><b>About Me</b></h1>
 					</div>
 				</div>
-				<div class="col-sm-12 mb50">
-					<img src="static/images/about-header.JPG" alt="image">
-				</div>
+				<section class="top-header style-six">
+					<div class="container">
+						<div class="row">
+							<div class="owl-carousel owl-theme slider-2 owl-loaded owl-drag">																				
+								<div class="owl-stage-outer">
+									<div class="owl-stage" style="transform: translate3d(-2880px, 0px, 0px); transition: all 0s ease 0s; width: 5760px;">
+
+										<div class="owl-item active" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/jeleanor.JPG" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+										<div class="owl-item" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/soccer.jpg" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+										<div class="owl-item" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/christmas.jpg" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+										<div class="owl-item" style="width: 720px;">
+											<div class="col-sm-12 text-center slider-image">
+												<div class="slider-image-slide">
+													<img src="static/images/goofy.jpg" alt="post-image">
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="owl-nav">
+									<button type="button" role="presentation" class="owl-prev">
+										<img src="static/images/arrow-white-2.png" alt="left-arrow">
+									</button>
+									<button type="button" role="presentation" class="owl-next">
+										<img src="static/images/arrow-white.png" alt="right=arrow">
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<div class="col-lg-6">
 					<p>I'm currently a junior at Texas A&#38;M University at College Station double majoring in Computer Science and Applied Mathematics and graduating in triple 
                     honors: University Honors, Engineering Honors, and Mathematics Honors. I have a twin sister that also goes to Texas A&#38;M with me, an older sister who
@@ -72,6 +128,26 @@
                     Datathon 2020. These were exciting yet insightful experiences that taught me a lot about how much there is to programming and software development. During the 
                     Spring semester, I was invited to join TAMU Datathon on their Development team as a Tech Director.</p>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-wrapper pad-75">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="">
+					<div class="col-md-6 float-right">
+						<img src="static/images/tamuhack.jpg" alt="tamuhack">
+					</div>
+					<div class="col-md-6  row h-100 justify-content-center align-items-center">
+						<div class="col-sm-12 pad-no">
+							<h2 style="font-size:32px">Ambition and Competitive Nature</h2>
+							<p>I was always a competitive kid growing up. I knew that as soon as got into high school and college, I would want to join a team or compete in something
+							that would satisfy my crave to be the best. Once I found out about hackathons in freshman year, I got sucked in. I thought that the perfect way to
+							showcase my drive and determination to be the best would be the compete in these hackathons that combined my creavitiy and programming skills.</p>
+						</div>						
+					</div>
+				</div>			
 			</div>
 		</div>
 	</section>

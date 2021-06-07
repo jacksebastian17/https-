@@ -151,121 +151,14 @@ $(document).ready(function() {
   
     function Sliders() {
   
-        $('.slider-5').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:true,
-            autoplay:true,  
-            autoplayTimeout:9000, 
-            dots:false,
-            navText:['<img src="images/arrow-left.png" alt="left-arrow" />','<img src="images/arrow.png" alt="right=arrow" />'],
-            responsive:{
-                320:{
-                    items:1
-                },
-                480:{
-                    items:2
-                },
-                1200:{
-                    items:3
-                }
-            }
-        })
-      
-        $('.slider-1').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:true,
-            autoplay:true,  
-            autoplayTimeout:9000, 
-            dots:false,
-            navText:['<img src="images/arrow-left.png" alt="left-arrow" />','<img src="images/arrow.png" alt="right=arrow" />'],
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        })
-  
-        $('.slider-8').owlCarousel({
-            animateOut: 'fadeOut',
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:false,  
-            autoplayTimeout:6000, 
-            dots:false,
-            
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        })
-  
-        $('.slider-7').owlCarousel({
-            animateOut: 'fadeOut',
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:false,  
-            autoplayTimeout:6000, 
-            dots:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        })
-  
-        $('.slider-4').owlCarousel({
-            animateOut: 'fadeOut',
-            loop:true,
-            margin:0,
-            nav:true,
-            autoplay:false,  
-            autoplayTimeout:6000, 
-            dots:true,
-            navText:['<img src="images/left-arrow-t.png" alt="left-arrow" />','<img src="images/right-arrow-t.png" alt="right=arrow" />'],
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        })
-  
         $('.slider-2').owlCarousel({
             loop:true,
             margin:0,
             nav:true,
-            autoplay:false,  
-            autoplayTimeout:6000, 
+            autoplay:true,  
+            autoplayTimeout:4000, 
             dots:true,
-            navText:['<img src="images/arrow-white-2.png" alt="left-arrow" />','<img src="images/arrow-white.png" alt="right=arrow" />'],
+            navText:['<img src="static/images/arrow-white-2.png" alt="left-arrow" />','<img src="static/images/arrow-white.png" alt="right=arrow" />'],
             responsive:{
                 0:{
                     items:1
@@ -286,7 +179,7 @@ $(document).ready(function() {
             autoplay:false,  
             autoplayTimeout:6000, 
             dots:false,
-            navText:['<img src="images/arrow-white-2.png" alt="left-arrow" />','<img src="images/arrow-white.png" alt="right=arrow" />'],
+            navText:['<img src="static/images/arrow-white-2.png" alt="left-arrow" />','<img src="static/images/arrow-white.png" alt="right=arrow" />'],
             responsive:{
                 0:{
                     items:1
@@ -311,65 +204,6 @@ $(document).ready(function() {
             e.preventDefault();
         });
         
-  
-         $('.slider-3').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,  
-            autoplayTimeout:11000, 
-            dots:false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        })
-  
-        $('.slider-6').owlCarousel({
-            loop:true,
-            margin:20,
-            nav:true,
-            autoplay:false, 
-            center: true, 
-            autoplayTimeout:6000, 
-            dots:true,
-            navText:['<img src="images/arrow-white-2.png" alt="left-arrow" />','<img src="images/arrow-white.png" alt="right=arrow" />'],
-            
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1300:{
-                    items:2
-                }
-            },
-           //remove class active
-           afterAction: function(el){
-     //remove class active
-     this
-     .$owlItems
-     .removeClass('active')
-  
-     //add class active
-     this
-     .$owlItems //owl internal $ object containing items
-     .eq(this.currentItem + 1)
-     .addClass('current')    
-      } 
-  
-        })
-  
-        
    
     }
   
@@ -378,7 +212,6 @@ $(document).ready(function() {
   Function Appear Items
   ---------------------------------------------------*/
   function AppearIteam() {    
-      
       setTimeout(function(){
         $('.has-animation').each(function() { 
           $(this).appear(function() {       
@@ -389,7 +222,6 @@ $(document).ready(function() {
           });   
         });
       } , 250 );    
-    
     }//End AppearIteam
   
   /*--------------------------------------------------
