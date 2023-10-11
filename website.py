@@ -16,7 +16,7 @@ def privacy():
 
 @app.route("/data-deletion")
 def data_deletion():
-    return render_template("data_deletion.html")
+    return render_template("data-deletion.html")
 
 
 if __name__ == "__main__":
