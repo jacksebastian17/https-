@@ -10,9 +10,14 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route('/privacy')
+@app.route("/privacy")
 def privacy():
-    return render_template('privacy.html')
+    return render_template("privacy.html")
+
+@app.route("/data-deletion")
+def data_deletion():
+    return render_template("data_deletion.html")
+
 
 if __name__ == "__main__":
     app.run()
