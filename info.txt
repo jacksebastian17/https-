@@ -7,9 +7,8 @@ jacksebastian.com/
 |-- /templates
 |    |-- about.html
 |    |-- index.html
-|-- about.html
+|    |-- privacy.html
 |-- CNAME
-|-- index.html
 |-- info.txt
 |-- README.md
 |-- website.py
