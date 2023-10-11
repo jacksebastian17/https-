@@ -1,0 +1,15 @@
+jacksebastian.com/
+|-- /static
+|    |-- /css
+|    |-- /images
+|    |-- /js
+|    |-- resume.pdf
+|-- /templates
+|    |-- about.html
+|    |-- index.html
+|-- about.html
+|-- CNAME
+|-- index.html
+|-- info.txt
+|-- README.md
+|-- website.py
